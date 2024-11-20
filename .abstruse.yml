@@ -1,7 +1,5 @@
-image: golang:1.15
-
-matrix:
-  - env: CMD=test
+image: alpine:latest
 
 script:
-  - if [[ "$CMD" ]]; then make $CMD; fi
+  - echo "Hello, World!"
+
